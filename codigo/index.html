@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="css.css" media="screen" />
+    <meta charset="UTF-8">
+    <title>M.I.B.R express</title>
+    
+</head>
+    
+<body>
+   
+    <header>
+        <h1>M.I.B.R express</h1> 
+        <nav id="barra-navegacao">
+            <a class="item-navegacao" href="#">Hardware</a>
+            <a class="item-navegacao" href="#">Contato</a>
+            <a class="item-navegacao" href="#">Precisa de Ajuda?</a>
+           </nav>
+    </header>
+   
+   <img id="pc-ilustrativo" src="imagem/pc vetorial ilustração.png" alt="" usemap="#mapa-pc-ilustrativo">
+   <div class="map-pc">
+   <map name="mapa-pc-ilustrativo">
+    <area alt="placa-mãe" shape="poly" href="#" coords="144,34,215,34,215,130,144,130">
+   </map>
+    </div>
+   <div class="container">
+    
+    <div class="card">
+        <p>Processador Intel Core I5-12400F</p>
+        <img img decoding="async" src="imagem/processador.png" alt="">
+
+        <div id="preco-carrinho-comprar">
+        <span>R$249,99</span>
+        <button class="comprar">Comprar</button>
+        <button class="carrinho_button">carrinho</button>
+        </div>
+    </div>
+    <div class="card">
+        <p>Placa Mãe Gigabyte Z690 Gaming X</p>
+        <img img decoding="async" src="imagem/placa-mae.png" alt="">
+        <div id="preco-carrinho-comprar">
+        <span>R$249,99</span>
+        <button class="comprar">Comprar</button>
+        <button class="carrinho_button">carrinho</button>
+        </div>
+    </div>
+    <div class="card">
+        <p>Corsair FONTE ATX 750W</p>
+        <img img decoding="async" src="imagem/fonte.png" alt="">
+        <div id="preco-carrinho-comprar">
+        <span>R$249,99</span>
+        <button class="comprar">Comprar</button>
+        <button class="carrinho_button">carrinho</button>
+        </div>
+    </div>
+    <div class="card">
+        <p>Memória Ram 16gb</p>
+        <img img decoding="async" src="imagem/ram.png" alt="">
+
+        <div id="preco-carrinho-comprar">
+        <span>R$249,99</span>
+
+        <button class="comprar">Comprar</button>
+        
+        <button class="carrinho_button">carrinho</button>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.carrinho_button');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            alert('O item foi adicionado ao carrinho!');
+        });
+    });
+});
+</script>
+</html>         
